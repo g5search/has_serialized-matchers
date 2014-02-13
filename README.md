@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-    it { should have_serialized_attribute(:serialized_attr).in(:serialized_attributes_list) }
+    it { should have_serialized_attribute(:serialized_attr).in(:serialized_attributes_list).with_default_value(value) }
 
 ## Contributing
 

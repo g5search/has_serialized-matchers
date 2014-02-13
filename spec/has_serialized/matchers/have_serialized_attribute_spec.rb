@@ -25,7 +25,7 @@ module HasSerialized
       context 'matchers' do
         subject{ Serializeable.new }
 
-        it { should have_serialized_attribute(:serial_attr).in(:serial_attrs) }
+        it { should have_serialized_attribute(:serial_attr).in(:serial_attrs).with_default_value('dummy') }
       end
     end
   end
